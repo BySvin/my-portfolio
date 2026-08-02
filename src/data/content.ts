@@ -115,4 +115,8 @@ export const stackBadges = [
   { label: "React Native", color: "#61DAFB" },
   { label: "Supabase", color: "#3ECF8E" },
   { label: "Git", color: "#F1502F" },
+  { label: "HTML", color: "#E44D26" },
+  { label: "CSS", color: "#2965F1" },
+  { label: "JavaScript", color: "#F0DB4F" },
+  { label: "Java", color: "#ED8B00" },
 ];

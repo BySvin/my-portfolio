@@ -1,16 +1,20 @@
 import { stackBadges } from "@/data/content";
 
 const badgePositions = [
-  "top-2 left-0 -rotate-3",
-  "top-10 right-[-8px] rotate-2",
-  "top-1/2 left-[-18px] -translate-y-1/2 rotate-1",
-  "top-1/2 right-[-14px] -translate-y-1/2 -rotate-2",
-  "bottom-4 left-1/2 -translate-x-1/2 rotate-1",
+  "top-0 left-[-6px] -rotate-3",
+  "top-0 right-[-2px] rotate-2",
+  "top-20 left-[-26px] rotate-1",
+  "top-20 right-[-22px] -rotate-2",
+  "top-1/2 left-[-34px] -translate-y-1/2 rotate-2",
+  "top-1/2 right-[-30px] -translate-y-1/2 -rotate-1",
+  "bottom-20 left-[-24px] -rotate-1",
+  "bottom-20 right-[-20px] rotate-2",
+  "bottom-0 left-1/2 -translate-x-1/2 rotate-1",
 ];
 
 export default function HeroVisual() {
   return (
-    <div className="relative mx-auto h-[22rem] w-full max-w-xs sm:h-[26rem] sm:max-w-sm">
+    <div className="relative mx-auto h-[26rem] w-full max-w-sm sm:h-[30rem] sm:max-w-md">
       <div
         aria-hidden
         className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink/5 blur-2xl"
@@ -113,7 +117,11 @@ export default function HeroVisual() {
       {stackBadges.map((badge, i) => (
         <div
           key={badge.label}
-          className={`absolute z-20 flex items-center gap-1.5 rounded-full border border-line bg-bg-card px-3 py-1.5 shadow-sm ${badgePositions[i % badgePositions.length]}`}
+          className={`animate-float absolute z-20 flex items-center gap-1.5 rounded-full border border-line bg-bg-card px-2.5 py-1 shadow-sm ${badgePositions[i % badgePositions.length]}`}
+          style={{
+            animationDelay: `${i * 0.4}s`,
+            animationDuration: `${4 + (i % 3) * 0.6}s`,
+          }}
         >
           <span
             aria-hidden
