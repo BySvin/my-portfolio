@@ -10,8 +10,8 @@ export const hero = {
   ctas: {
     viewProjects: { label: "View Projects", href: "#projects" },
     resume: { label: "Download Resume", href: "/resume/resume.pdf" }, // TODO: add resume.pdf to public/resume/
-    github: { label: "GitHub", href: "#" }, // TODO: your GitHub URL
-    linkedin: { label: "LinkedIn", href: "#" }, // TODO: your LinkedIn URL
+    github: { label: "GitHub", href: null as string | null }, // TODO: your GitHub URL
+    linkedin: { label: "LinkedIn", href: null as string | null }, // TODO: your LinkedIn URL
   },
 };
 
@@ -93,8 +93,8 @@ export const skills = {
 export const contact = {
   heading: "Let's connect.",
   email: "bysvinedits@gmail.com",
-  linkedin: "#", // TODO: your LinkedIn URL
-  github: "#", // TODO: your GitHub URL
+  linkedin: null as string | null, // TODO: your LinkedIn URL
+  github: null as string | null, // TODO: your GitHub URL
   resumeHref: "/resume/resume.pdf", // TODO: add resume.pdf to public/resume/
 };
 

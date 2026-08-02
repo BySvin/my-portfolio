@@ -51,6 +51,18 @@ export function ArrowUpRightIcon({ className = "h-4 w-4" }: IconProps) {
   );
 }
 
+export function LogoMark({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <circle cx="12" cy="5" r="2.4" />
+      <circle cx="12" cy="19" r="2.4" />
+      <circle cx="5" cy="12" r="2.4" />
+      <circle cx="19" cy="12" r="2.4" />
+      <circle cx="12" cy="12" r="2.4" />
+    </svg>
+  );
+}
+
 export function MailIcon({ className = "h-4 w-4" }: IconProps) {
   return (
     <svg
