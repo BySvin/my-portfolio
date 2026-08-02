@@ -110,13 +110,13 @@ export const nav = {
 // Badges floating around the signature hero illustration — your real stack,
 // not decorative icons.
 export const stackBadges = [
-  { label: "Flutter", color: "#54C5F8" },
-  { label: "Firebase", color: "#F0A93C" },
-  { label: "React Native", color: "#61DAFB" },
-  { label: "Supabase", color: "#3ECF8E" },
-  { label: "Git", color: "#F1502F" },
-  { label: "HTML", color: "#E44D26" },
-  { label: "CSS", color: "#2965F1" },
-  { label: "JavaScript", color: "#F0DB4F" },
-  { label: "Java", color: "#ED8B00" },
+  { label: "Flutter", color: "#54C5F8", file: "main.dart" },
+  { label: "Firebase", color: "#F0A93C", file: "firebase.json" },
+  { label: "React Native", color: "#61DAFB", file: "App.jsx" },
+  { label: "Supabase", color: "#3ECF8E", file: "client.ts" },
+  { label: "Git", color: "#F1502F", file: ".gitignore" },
+  { label: "HTML", color: "#E44D26", file: "index.html" },
+  { label: "CSS", color: "#2965F1", file: "style.css" },
+  { label: "JavaScript", color: "#F0DB4F", file: "script.js" },
+  { label: "Java", color: "#ED8B00", file: "Main.java" },
 ];
