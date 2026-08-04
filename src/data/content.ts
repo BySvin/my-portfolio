@@ -3,7 +3,7 @@
 
 export const hero = {
   name: "Sarvin Raaj", // TODO: replace with your real name
-  title: "Software Developer — Mobile App Development",
+  title: "Building Products. Solving Problems. Learning Every Day.",
   tagline: "Building real products with Flutter, React Native & Firebase.",
   subtext:
     "Diploma in Information Technology (Software Development), Politeknik Balik Pulau.",
