@@ -38,7 +38,7 @@ export interface Project {
   keyFeatures?: string[];
   technicalChallenges?: string;
   whatIdImprove?: string;
-  links?: { liveDemo?: string; demoVideo?: string; github?: string };
+  links?: { demoVideo?: string; github?: string };
 }
 
 export const projects: Project[] = [
@@ -69,7 +69,10 @@ export const projects: Project[] = [
       "TODO: e.g. \"Designing a Firestore data model that supported real-time updates across 3+ roles without excessive read costs.\"",
     whatIdImprove:
       "TODO: e.g. \"Add automated integration tests for the booking flow.\"",
-    links: { liveDemo: undefined, demoVideo: undefined, github: undefined },
+    links: {
+      demoVideo: undefined,
+      github: "https://github.com/BySvin/MyPulse360",
+    },
   },
   {
     id: "project-2",
@@ -78,16 +81,37 @@ export const projects: Project[] = [
   },
 ];
 
-export const skills = {
-  Languages: ["Dart", "JavaScript/TypeScript", "Python (coursework)"],
-  Mobile: ["Flutter", "React Native / Expo"],
-  "Backend & Data": ["Firebase (Auth, Firestore, Storage, FCM)", "Supabase"],
-  "Architecture & State": [
-    "Riverpod",
-    "Feature-First Clean Architecture",
-    "Repository Pattern",
+export interface Skill {
+  label: string;
+  level: number; // 0-100, self-assessed proficiency — adjust to what you'd defend in an interview
+}
+
+// TODO: these levels are starting estimates based on how central each tool is
+// to your work (e.g. "coursework" skills scored lower) — tune them to your
+// own honest self-assessment.
+export const skills: Record<string, Skill[]> = {
+  Languages: [
+    { label: "Dart", level: 85 },
+    { label: "JavaScript/TypeScript", level: 70 },
+    { label: "Python (coursework)", level: 40 },
   ],
-  Tools: ["Git/GitHub", "VS Code"],
+  Mobile: [
+    { label: "Flutter", level: 85 },
+    { label: "React Native / Expo", level: 65 },
+  ],
+  "Backend & Data": [
+    { label: "Firebase (Auth, Firestore, Storage, FCM)", level: 80 },
+    { label: "Supabase", level: 55 },
+  ],
+  "Architecture & State": [
+    { label: "Riverpod", level: 75 },
+    { label: "Feature-First Clean Architecture", level: 75 },
+    { label: "Repository Pattern", level: 75 },
+  ],
+  Tools: [
+    { label: "Git/GitHub", level: 80 },
+    { label: "VS Code", level: 90 },
+  ],
 };
 
 export const contact = {

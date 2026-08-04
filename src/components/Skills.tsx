@@ -15,7 +15,12 @@ export default function Skills() {
             </p>
             <div className="mt-4 flex flex-col gap-4">
               {items.map((item, i) => (
-                <SkillBar key={item} label={item} delay={i * 90} />
+                <SkillBar
+                  key={item.label}
+                  label={item.label}
+                  level={item.level}
+                  delay={i * 90}
+                />
               ))}
             </div>
           </div>

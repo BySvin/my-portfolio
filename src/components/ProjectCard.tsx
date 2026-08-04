@@ -106,15 +106,6 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="flex flex-wrap items-center gap-3 border-t border-line pt-6">
-        {project.links?.liveDemo ? (
-          <Button href={project.links.liveDemo} variant="secondary">
-            Live demo <ArrowUpRightIcon className="h-3.5 w-3.5" />
-          </Button>
-        ) : (
-          <Button disabled disabledLabel="Live demo link coming soon" variant="secondary">
-            Live demo <ArrowUpRightIcon className="h-3.5 w-3.5" />
-          </Button>
-        )}
         {project.links?.demoVideo ? (
           <Button href={project.links.demoVideo} variant="secondary">
             Demo video <ArrowUpRightIcon className="h-3.5 w-3.5" />
