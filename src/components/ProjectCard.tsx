@@ -1,7 +1,6 @@
 import type { Project } from "@/data/content";
 import Button from "./ui/Button";
 import Tag from "./ui/Tag";
-import PlaceholderImage from "./ui/PlaceholderImage";
 import { ArrowUpRightIcon, GitHubIcon } from "./ui/Icons";
 
 function isDraft(value?: string) {
@@ -60,8 +59,6 @@ export default function ProjectCard({ project }: { project: Project }) {
         )}
       </header>
 
-      <PlaceholderImage label={`Screenshot / demo GIF — ${project.title}`} />
-
       <div className="grid gap-6 sm:grid-cols-2">
         <Field label="The Problem" value={project.problem} />
         <Field label="My Role" value={project.role} />
@@ -112,12 +109,8 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="flex flex-wrap items-center gap-3 border-t border-line pt-6">
-        {project.links?.liveDemo ? (
+        {project.links?.liveDemo && (
           <Button href={project.links.liveDemo} variant="secondary">
-            Live demo <ArrowUpRightIcon className="h-3.5 w-3.5" />
-          </Button>
-        ) : (
-          <Button disabled disabledLabel="Live demo coming soon" variant="secondary">
             Live demo <ArrowUpRightIcon className="h-3.5 w-3.5" />
           </Button>
         )}
