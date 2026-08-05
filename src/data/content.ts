@@ -78,16 +78,35 @@ export const projects: Project[] = [
     id: "foodcalai",
     status: "complete",
     title: "FoodCalAI",
-    subtitle:
-      'TODO: one-line description — e.g. "AI-powered food calorie tracker"',
-    problem: "TODO: what problem does FoodCalAI solve, and for whom?",
+    subtitle: "A clean, minimalist calorie and macro tracker",
+    problem:
+      "Tracking calories, macros, and water day-to-day usually means a cluttered app or a spreadsheet. FoodCalAI keeps it fast and minimal — onboarding computes personalized daily calorie/macro/water targets (Mifflin-St Jeor), then logging stays quick via catalog search, favorites, and recent foods, all from one Flutter codebase across Android, iOS, and Web.",
     role: "Solo developer — full project lifecycle from scoping to deployment.",
-    techStack: ["TODO: add tech stack, e.g. Flutter, TensorFlow Lite, Firebase"],
-    whyThisStack: "TODO",
-    keyFeatures: ["TODO: add 2-4 key features"],
-    technicalChallenges: "TODO",
-    whatIdImprove: "TODO",
-    links: { demoVideo: undefined, github: undefined },
+    techStack: [
+      "Flutter + Dart",
+      "Firebase (Auth, Firestore, Analytics, Crashlytics)",
+      "Riverpod for state management",
+      "Go Router for navigation",
+      "Material 3 design system",
+      "fl_chart for weight trend charts",
+    ],
+    whyThisStack:
+      'TODO: e.g. "Reused the Riverpod + Firebase pattern from MyPulse360 for consistency across projects; Go Router centralizes the auth/onboarding redirect guard instead of checking state in every screen, and Material 3 gave light/dark/system theming for free."',
+    keyFeatures: [
+      "Email/password + Google Sign-In auth, with password reset and email verification",
+      "6-step onboarding flow that computes daily calorie/macro/water targets (Mifflin-St Jeor)",
+      "Live dashboard with a calorie progress ring, macro bars, and water card",
+      "Food logging via catalog search, manual entries, favorites, and recent foods",
+      "Weight tracking with a trend chart, plus 30-day daily history",
+    ],
+    technicalChallenges:
+      "Food search returned nothing until the shared foods Firestore collection was populated, so I built an idempotent seed script that loads ~184 curated foods with stable per-food IDs — safe to re-run during development without duplicating data.",
+    whatIdImprove:
+      'TODO: e.g. "This is a V1/MVP — a natural next step would be macro/nutrient breakdown beyond calories, or barcode scanning for faster logging."',
+    links: {
+      demoVideo: undefined,
+      github: "https://github.com/BySvin/foodcal-ai",
+    },
   },
 ];
 
