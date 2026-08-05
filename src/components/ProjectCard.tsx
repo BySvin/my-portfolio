@@ -48,7 +48,13 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.title}
         </h3>
         {project.subtitle && (
-          <p className="mt-1 text-sm text-ink-soft sm:text-base">
+          <p
+            className={`mt-1 text-sm sm:text-base ${
+              isDraft(project.subtitle)
+                ? "italic text-ink-soft/70"
+                : "text-ink-soft"
+            }`}
+          >
             {project.subtitle}
           </p>
         )}

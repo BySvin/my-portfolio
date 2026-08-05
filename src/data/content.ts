@@ -75,9 +75,19 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "project-2",
-    status: "comingSoon",
-    title: "More projects coming soon",
+    id: "foodcalai",
+    status: "complete",
+    title: "FoodCalAI",
+    subtitle:
+      'TODO: one-line description — e.g. "AI-powered food calorie tracker"',
+    problem: "TODO: what problem does FoodCalAI solve, and for whom?",
+    role: "Solo developer — full project lifecycle from scoping to deployment.",
+    techStack: ["TODO: add tech stack, e.g. Flutter, TensorFlow Lite, Firebase"],
+    whyThisStack: "TODO",
+    keyFeatures: ["TODO: add 2-4 key features"],
+    technicalChallenges: "TODO",
+    whatIdImprove: "TODO",
+    links: { demoVideo: undefined, github: undefined },
   },
 ];
 
