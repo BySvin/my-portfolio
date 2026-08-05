@@ -38,7 +38,7 @@ export interface Project {
   keyFeatures?: string[];
   technicalChallenges?: string;
   whatIdImprove?: string;
-  links?: { demoVideo?: string; github?: string };
+  links?: { liveDemo?: string; github?: string };
 }
 
 export const projects: Project[] = [
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     whatIdImprove:
       "TODO: e.g. \"Add automated integration tests for the booking flow.\"",
     links: {
-      demoVideo: undefined,
+      liveDemo: undefined,
       github: "https://github.com/BySvin/MyPulse360",
     },
   },
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     whatIdImprove:
       'TODO: e.g. "This is a V1/MVP — a natural next step would be macro/nutrient breakdown beyond calories, or barcode scanning for faster logging."',
     links: {
-      demoVideo: undefined,
+      liveDemo: "https://foodcal-ai-app.web.app",
       github: "https://github.com/BySvin/foodcal-ai",
     },
   },
