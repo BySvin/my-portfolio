@@ -58,7 +58,7 @@ export const projects: Project[] = [
       "VS Code",
     ],
     whyThisStack:
-      "TODO: e.g. \"Chose Riverpod over Provider for better testability and compile-time safety across a growing multi-role codebase. Feature-first architecture kept each role's logic isolated, which mattered once the app grew past two roles.\"",
+      "Chose Riverpod over Provider for better testability and compile-time safety across a growing multi-role codebase. Feature-first architecture kept each role's logic isolated, which mattered once the app grew past two roles.",
     keyFeatures: [
       "Role-based authentication and routing across 5 user types",
       "Real-time appointment booking and status sync (Patient ↔ Doctor ↔ Receptionist)",
@@ -66,9 +66,9 @@ export const projects: Project[] = [
       "TODO: add pharmacist/admin features if included in final scope",
     ],
     technicalChallenges:
-      "TODO: e.g. \"Designing a Firestore data model that supported real-time updates across 3+ roles without excessive read costs.\"",
+      "Designing a Firestore data model that supported real-time updates across 3+ roles without excessive read costs.",
     whatIdImprove:
-      "TODO: e.g. \"Add automated integration tests for the booking flow.\"",
+      "Add automated integration tests for the booking flow.",
     links: {
       liveDemo: undefined,
       github: "https://github.com/BySvin/MyPulse360",
@@ -91,7 +91,7 @@ export const projects: Project[] = [
       "fl_chart for weight trend charts",
     ],
     whyThisStack:
-      'TODO: e.g. "Reused the Riverpod + Firebase pattern from MyPulse360 for consistency across projects; Go Router centralizes the auth/onboarding redirect guard instead of checking state in every screen, and Material 3 gave light/dark/system theming for free."',
+      'Reused the Riverpod + Firebase pattern from MyPulse360 for consistency across projects; Go Router centralizes the auth/onboarding redirect guard instead of checking state in every screen, and Material 3 gave light/dark/system theming for free.',
     keyFeatures: [
       "Email/password + Google Sign-In auth, with password reset and email verification",
       "6-step onboarding flow that computes daily calorie/macro/water targets (Mifflin-St Jeor)",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     technicalChallenges:
       "Food search returned nothing until the shared foods Firestore collection was populated, so I built an idempotent seed script that loads ~184 curated foods with stable per-food IDs — safe to re-run during development without duplicating data.",
     whatIdImprove:
-      'TODO: e.g. "This is a V1/MVP — a natural next step would be macro/nutrient breakdown beyond calories, or barcode scanning for faster logging."',
+      'This is a V1/MVP — a natural next step would be macro/nutrient breakdown beyond calories, or barcode scanning for faster logging.',
     links: {
       liveDemo: "https://foodcal-ai-app.web.app",
       github: "https://github.com/BySvin/foodcal-ai",
@@ -120,26 +120,26 @@ export interface Skill {
 // own honest self-assessment.
 export const skills: Record<string, Skill[]> = {
   Languages: [
-    { label: "Dart", level: 85 },
+    { label: "Dart", level: 70 },
     { label: "JavaScript/TypeScript", level: 70 },
     { label: "Python (coursework)", level: 40 },
   ],
   Mobile: [
-    { label: "Flutter", level: 85 },
+    { label: "Flutter", level: 80 },
     { label: "React Native / Expo", level: 65 },
   ],
   "Backend & Data": [
-    { label: "Firebase (Auth, Firestore, Storage, FCM)", level: 80 },
-    { label: "Supabase", level: 55 },
+    { label: "Firebase (Auth, Firestore, Storage, FCM)", level: 60 },
+    { label: "Supabase", level: 65 },
   ],
   "Architecture & State": [
-    { label: "Riverpod", level: 75 },
-    { label: "Feature-First Clean Architecture", level: 75 },
-    { label: "Repository Pattern", level: 75 },
+    { label: "Riverpod", level: 40 },
+    { label: "Feature-First Clean Architecture", level: 50 },
+    { label: "Repository Pattern", level: 50 },
   ],
   Tools: [
-    { label: "Git/GitHub", level: 80 },
-    { label: "VS Code", level: 90 },
+    { label: "Git/GitHub", level: 70 },
+    { label: "VS Code", level: 85 },
   ],
 };
 
